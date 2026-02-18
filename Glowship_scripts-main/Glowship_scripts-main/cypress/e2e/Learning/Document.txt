@@ -1,0 +1,329 @@
+Mocha - Comes pre bundled with two function calls which are describe() and it() both have their own specific purpose. 
+
+describe() - describe() is simply a way to group of tests in Mocha.It takes two arguments first name of the test group & 
+             second is a call back function.
+it() -       it() is a way to describe each individual test case which is nested inside the  describe() block.
+
+it.only - It used to run a specific code block
+it.skip - It used to skip a specific code block
+
+
+USE OF SOME FUNCTION IN CYPRESS - 
+
+cy.get()      - Get one or more DOM elements by selector or alias.
+cy.contains() - Get the DOM element containing the text. DOM elements can contain more than the desired text and still match.
+cy.visit()    - Visit a remote URL.
+cy.document() - Get the  window.document of the page that is currently active.
+cy.title()    - Get the document.title property of the page that is currently active.
+cy.url()      - Get the current Url of the page that is currently active
+cy.log()      - Print a message in the Cypress command log.
+
+
+## Best practice to select a web element -
+- Go to the following link - (https://docs.cypress.io/guides/references/best-practices)
+ex -  
+     cy.get('[data-cy="submit"]').click() //Always	Best. Isolated from all changes.
+  
+## Assertions   
+- Go to the following link - (https://docs.cypress.io/guides/references/assertions#Adding-New-Assertions)
+
+## Chai Assertion Library
+- Go to the following link - (https://www.chaijs.com/)
+
+## contains - Get the DOM element containing the text. DOM elements can contain more than the desired text and still match. Additionally, 
+              Cypress prefers some DOM elements over the deepest element found.
+              
+
+
+- To run all the script through terminal -
+./node_modules/.bin/cypress run
+
+- To open cypress through node_modules -
+./node_modules/.bin/cypress open
+
+- To run all the script through default browser window -
+./node_modules/.bin/cypress run --headed
+
+- To run all the script through a specific browser window -
+./node_modules/.bin/cypress run --browser chrome
+
+- To run a specific script through terminal (./node_modules/.bin/cypress run --spec & relative path of the script file location) -
+./node_modules/.bin/cypress run --spec cypress/integration/Learning/Document.txt
+
+- To run a folder scripts through terminal (./node_modules/.bin/cypress run --spec & relative path of the script folder location & add(/*) at last ) -
+./node_modules/.bin/cypress run --spec cypress/integration/Learning/*
+
+ Alias - Assign an alias for later use. Reference the alias later within a cy.get() or cy.wait() command with an @ prefix.
+
+ WHAT IS SYNCHRONOUS?
+▪ Code is executed one at a time in the order it appears.
+▪ Single threaded synchronous execution (Executed in a sequencedmanner).
+▪ In JavaScript this means one thing is happening at a time.
+
+ WHAT IS ASYNCHRONOUS?
+▪ Asynchronous more than one thing at a time.
+▪ Some code is executing which starts of executing some other code and that code starts executing some more code.
+▪ All this code is executing within the engine at the same time.
+▪ Whatever step is available to be executed will be executed...!
+
+ CYPRESS EXAMPLE!
+▪ In the below example, console.log will be executed first, because
+the ordering is not guaranteed and console.log is a non-Cypress
+command!
+
+   cy.visit("http://webdriveruniversity.com/Contact-Us/contactus.html")
+   cy.get('[name="first_name"]').type('Joe');
+   console.log('Hello world!')
+   cy.get('[name="last_name"]').type('blogs')
+   cy.get('[type="submit"]').click()
+ 
+ Cypress commands are asynchronous, and Cypress is built upon NodeJS, hence thats why
+ in earlier lectures we setup and used npm which is the Node package manager for
+ the JavaScript programming language.
+
+ // Note - If we uses a non-cypress command the order of execution is not guaranteed.
+
+Promise - To commit to do something (Promise enable us to handle the order of execution) usinf .then command
+
+
+each()  - Iterate through an array like structure (arrays or objects with a length property).
+
+each(),is used to iterate, exclusively, over a jQuery object. The $. each() function can be used to iterate over any 
+collection, whether it is an object or an array. In the case of an array, the callback is passed an array index and a 
+corresponding array value each time.
+
+text() -The text() method sets or returns the text content of the selected elements.
+
+wrap()  - Yield the object passed into .wrap(). If the object is a promise, yield its resolved value.
+
+
+To handle mutiple tabs/screen in cypress we use jQuery method invoke -
+Syntax - cy.get('#proposals-nav > .nav-item').invoke('removeAttr', 'target').click() //Open a new window in the old window
+
+// Browser navigation forward/back/reload
+cy.go('back')
+cy.reload()
+cy.reload(true) //reload without using cache
+cy.go('forward')\
+
+
+Alerts in cypress -
+
+Cypress can work with alerts by default. The pop-up can be an alert or confirmation popup.Cypress is designed in such a way that 
+it shall always click on the OK button on the pop-up. 
+'An alert is triggered by window:alert event. This is by default handled by Cypress and the OK button on the alert gets clicked,
+ without being visible during execution.'
+
+
+ Iframe - Cypress did not support iframes but using jQuery(promise) we can interact with dom variable.
+
+check() - To check checkbox(es) or radio(s).
+
+// To uncheck all the checkbox
+cy.get(':checkbox').uncheck({force: true})
+
+
+
+// TRAVERSAL different methods -
+1.  children() - To get children of DOM elements, use the .children() command.
+2.  closest()  - To get the closest ancestor(पूर्वज) DOM element, use the .closest() command.
+3.  eq()       - To get a DOM element at a specific index, use the .eq() command.
+4.  filter()   - To get DOM elements that match a specific selector, use the .filter() command.
+5.  find()     - To get descendant(वंशज) DOM elements of the selector, use the .find() command.
+6.  first()    - To get the first DOM element within elements, use the .first() command.
+7.  last()     - To get the last DOM element within elements, use the .last() command
+8.  nextAll()  - To get all of the next sibling DOM elements within elements, use the .nextAll() command.
+9.  nextUntil()- To get all of the next sibling DOM elements within elements until another element, use the .nextUntil() command.
+10. not()      - To remove DOM element(s) from the set of elements, use the .not() command. 
+11. parent()   - To get parent DOM element of elements, use the .parent() command.
+12. parents()  - To get parent DOM elements of elements, use the .parents() command.
+13. prev()     - To get the previous sibling DOM element within elements, use the .prev() command.
+14. prevAll()  - To get all previous sibling DOM elements within elements, use the .prevAll() command.
+15. prevUntil()- To get all previous sibling DOM elements within elements until other element, use the .prevUntil() command.
+16. siblings() -  To get all sibling DOM elements of elements, use the .siblings() command
+
+HOOKS -
+
+Cypress also provides hooks(borrowed from Mocha).
+These are helpful to set conditions that you want to run beforeaset of tests or before each test.They're also
+helpful to clean up conditions after a set of tests or after each test.
+
+describe('Hooks',()»>{
+  before(()->{
+   // runs once before all tests in the block
+  })
+  after(()->(
+   // runs once after all tests in the block
+  beforeEach(()=>{
+   // runs before each test in the block
+  })
+  afterEach(()->{
+   // runs after each test in the block
+  })
+
+fixture - Load a fixed set of data located in a file.
+
+Custom Commands - Cypress comes with its own API for creating custom commands and overwriting existing commands. 
+                  The built in Cypress commands use the very same API that's defined below.
+SYNTAX - Cypress.Commands.add(name, callbackFn)
+         Cypress.Commands.addAll(callbackObj)
+         Cypress.Commands.overwrite(name, callbackFn)
+
+
+// To ignore all file of any extension paste the following command to - cypress.json file 
+- "ignoreTestFiles" :  "*.js"
+
+// To ignore only a specific folder paste the following command to - cypress.json file
+"ignoreTestFiles" :  "**/Learning/*"  
+
+// To ignore only a specific file paste the following command to - cypress.json file
+"ignoreTestFiles" :  "Hardik.js"
+
+
+// Cypress.env("first_name") is a environment variable its value is added on the cypress.json file
+
+// To chnage the environment varible value at run time paste the path of the file after spec -
+./node_modules/.bin/cypress run --browser chrome --spec cypress/integration/webdriver-uni/contact-us.js --env first_name=Tim
+
+// Declare a base Url in cypress.json file to access it on any file
+cy.visit("/")
+
+// To add a Url using a env variable - (firstly add its value on cypress.json file) then
+cy.visit(Cypress.env("webdriveruni_homepage")
+
+// Note - We can add mutiple Url in the cypress.json file
+
+// To add dynamic Url -
+cy.visit(Cypress.env("webdriveruni_homepage")+ "Contact-Us/contactus.html")
+
+//Page Object Modelling
+- Firstly we have to add new folder, sub-folder & add file which contain the URL on (support folder) -
+
+//To import that file to our test write the following command on top -
+ Note (Please look Page_objects) folder to relate then add -
+
+import Homepage_PO from '../../support/Page_objects/webdriver_uni/Homepage_PO'
+
+(Initialize a varible in to call the url) 
+example - Page_objectmodel.js
+
+
+// Handling Timeouts
+Explicit timeout - {timeout :30000}
+
+pause() - Stop cy commands from running and allow interaction with the application under test. 
+wait()  - Wait for a number of milliseconds or wait for an aliased resource to resolve before moving on to the next command.
+
+
+// To reference the cy.fixture data we use -
+this.data =data;     //or
+globalThis.data = data;
+
+
+// Capture screenshot at any stage of the running script add -
+cy.screenshot()
+
+// Capture screenshot at any stage of the running script & name that screenshot -
+cy.screenshot("Image")
+
+// Video in cypress
+Cypress records a video for each spec file when running tests during cypress run.
+Videos are not automatically recorded during cypress open.
+Video recording can be turned off entirely by setting video to false from within your configuration.
+Videos are stored in the videosFolder which is set to cypress/videos by default.
+
+// To record a video we have to run test through terminal -
+./node_modules/.bin/cypress run --spec cypress/integration/Learning/Handling_TimeOuts.js
+
+// Viewport -  Control the size and orientation of the screen for your application.
+ex - cy.viewport('iphone-6')  
+
+Access the following link for more details - https://docs.cypress.io/api/commands/viewport#Syntax
+
+// clearCookies 
+Cypress automatically clears all cookies before each test to prevent state from being shared across tests.
+You shouldn't need to use this command unless you're using it to clear a specific cookie inside a single test.
+
+cy.clearCookies()
+cy.clearLocalStorage()
+
+
+// Dashboard - The Cypress Dashboard is a service that gives you access to recorded test results -
+ typically when running Cypress tests from your CI provider.The Dashboard provides you insight into what happened when 
+ your tests ran.
+
+ From the Dashboard you can: -
+- See the number of failed, passing, pending and skipped tests.
+- Get the entire stack trace of failed tests.
+- View screenshots taken when tests fail or when using cy.screenshot().
+- Watch a video of your entire test run or a video clip at the point of test failure.
+- See how fast your spec files ran within CI including whether they were run in parallel.
+- See related groupings of tests.
+
+// To run all tests through terminal & get result in test runner - (Runs) section
+
+./node_modules/.bin/cypress run --record --key b6a9501c-d21b-4ed5-897a-db7934763486
+
+// To run a  specific test through terminal & get result in test runner - (Runs) section
+(Note -Paste the file relative xpath of the file after run & add -- spec before xpath)
+
+./node_modules/.bin/cypress run --spec cypress/integration/Learning/date_picker.js --record --key b6a9501c-d21b-4ed5-897a-db7934763486
+
+
+- NPM script -
+    "trigger AllTests-headless": "npx cypress run",
+    "trigger AllTests-headed": "npx cypress run --headed",
+    "trigger AllTests-chrome": "npx cypress run --browser chrome",
+    "trigger AllTests-dashboard": "npx cypress run --record --key b6a9501c-d21b-4ed5-897a-db7934763486",
+    "trigger AllTests-Learning": "npx cypress run --spec cypress/e2e/Learning/*"
+
+    All of them is located in package.json file
+
+Use of NMP script - To write & run the custom commands.
+
+To run that command in terminal write -
+( npm run triggerAllTests-Learning)
+
+
+- How we can generate report locally using jUnit reports -
+
+# Multiple reporters
+Oftentimes we see users wanting the ability to use multiple reporters. When running in CI, you might want to generate a report 
+for junit and perhaps a json report. This is great, but by setting this reporter you won't receive any additional feedback 
+while the tests are running!
+
+We need to install additional dependencies:
+(npm install --save-dev cypress-multi-reporters mocha-junit-reporter mocha)
+
+Then add the separate reporter-config.json file (defined in your configuration) to enable spec and junit reporters -
+
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
+  reporterEnabled: 'spec, mocha-junit-reporter',
+  mochaJunitReporterReporterOptions: {
+    mochaFile: 'cypress/results/results-[hash].xml'
+  }
+})
+
+
+## What is CI/CD.
+CI/CD stands for Continuous Integration/Continuous Deployment. It is a software development practice where code changes are 
+automatically built, tested, and deployed to production.One of Cypress’s most essential and powerful use cases is having it 
+run in your CI/CD pipeline. This way, every time you make a change to your codebase, your CI Pipeline will automatically 
+run all of your Cypress tests to ensure that nothing has broken in your application
+
+
+## What is GitHub Actions?
+GitHub Actions is a Continuous Integration (build, test, merge) and Continuous Delivery (automatically released to the repository) 
+(CI/CD) platform.It automates and executes the software development workflows right from GitHub.
+                                              With GitHub Actions, you can build, test, and publish across multiple platforms
+operating systems, and languages all within the same workflow and then see the status checks displayed within the pull request.
+
+# Some of the features of GitHub Actions are:
+- Ease of setup. There is no installation required as it is on the cloud.
+- Support of multiple languages and frameworks.
+- Provides actions to every GitHub event.
+- It can be shared via GitHub Marketplace.
+- No explicit plugin is required for caching. You can write your own caching mechanism if you require caching.
+- Asynchronous CI/CD is achieved using GitHub Actions.

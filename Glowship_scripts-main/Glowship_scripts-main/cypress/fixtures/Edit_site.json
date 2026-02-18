@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "monthly": "499,\r\n3459",
+      "occupants": "0,\r\n100,\r\n5",
+      "roofarea": "119.99,\r\n99,\r\n666",
+      "bedroom": "14,\r\n9",
+      "sanction": "0,\r\n31,\r\n6.99",
+      "searchlead": 8986876786,
+      "appliances": "Geysers,Dishwasher,Induction stove",
+      "qt": "2,3,1",
+      "water": "Booster",
+      "hp": "1.5 hp",
+      "ac": 2,
+      "reference": "##1234AQW",
+      "floorlevel": "2 m",
+      "editmargin": 6.99,
+      "parter": 7.51,
+      "taxes": 12,
+      "liaisoning": 3589,
+      "downpayment": 22,
+      "interest": 8,
+      "order": 35,
+      "schedule": 45,
+      "prior": 15,
+      "commission": 5
+    }
+  ]
+}

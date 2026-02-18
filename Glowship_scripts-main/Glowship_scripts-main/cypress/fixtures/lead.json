@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "salutation": "Prof.",
+      "c_type": "SME",
+      "fname": "Raman",
+      "email": "admintest@glowsun.io",
+      "mobile": 8986876786,
+      "add_line1": "Holi chowk ",
+      "add_line2": "Gandhinagar, Rampuri ,MZN",
+      "city": "MZN",
+      "state": "Uttar Pradesh",
+      "pincode": 251001,
+      "monthly": 3459,
+      "occupants": 6,
+      "roofarea": 666,
+      "bedroom": 4,
+      "sanction": 6.99,
+      "assign": "Aman",
+      "searchlead": 8986876786,
+      "water": "Booster",
+      "hp": "1.5 hp",
+      "ac": 2,
+      "reference": "##1234AQW",
+      "floorlevel": "2 m",
+      "editmargin": 6.99,
+      "parter": 7.51,
+      "taxes": 12,
+      "liaisoning": 3589,
+      "downpayment": 22,
+      "interest": 8,
+      "order": 35,
+      "schedule": 45,
+      "prior": 15,
+      "commission": 5
+    }
+  ]
+}

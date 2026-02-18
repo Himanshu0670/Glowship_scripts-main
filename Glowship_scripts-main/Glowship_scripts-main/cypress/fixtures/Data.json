@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "role": "Mobile",
+      "fname": "ABC",
+      "mobile": 7777777777,
+      "email": "admintest@glowsun.io",
+      "notify": 0,
+      "add_line1": "Holi chowk ",
+      "add_line2": "Gandhinagar, Rampuri",
+      "add_line3": "Muzaffarnagar",
+      "city": "MZN",
+      "state": "Uttar Pradesh",
+      "pincode": 251001
+    },
+    {
+      "role": "Admin",
+      "fname": "Raman",
+      "email": "aman@121gmail.com",
+      "notify": 1,
+      "user_type": 1,
+      "add_line1": "Begrajpur",
+      "add_line3": "Muzaffarnagar",
+      "city": "MZN",
+      "state": "Uttar Pradesh",
+      "pincode": 251002
+    },
+    {
+      "role": "Call",
+      "fname": "Avni",
+      "mobile": 8989736364,
+      "email": "avni89@oulook.in",
+      "notify": 1,
+      "user_type": 1,
+      "add_line1": "Kalkaji Mandir",
+      "add_line2": "Near, DAV inter College, Aarya Samaajh Road",
+      "add_line3": "Khatuli",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": 560037
+    },
+    {
+      "role": "Call",
+      "fname": "Deepak",
+      "mobile": 6786835332,
+      "email": "deepeekrabdisamoddhkdhd199@gmail.com",
+      "notify": 0,
+      "user_type": 1,
+      "add_line1": "Kalkaji Mandir",
+      "add_line2": "Geeta Colony",
+      "city": "Delhi",
+      "state": "Delhi",
+      "pincode": 110010
+    },
+    {
+      "role": "Mobile",
+      "fname": "This user has fifty characters as full name random",
+      "mobile": 8765687765,
+      "email": "ram@yahoo.co.in",
+      "notify": 1,
+      "add_line1": "Kalkaji Mandir",
+      "add_line2": "B-21, New Vihar",
+      "add_line3": "Near ABC School",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": 400011
+    },
+    {
+      "role": "Admin",
+      "fname": "ABC",
+      "mobile": 7777777777,
+      "email": "admintest@glowsun.io",
+      "notify": 0,
+      "user_type": 1,
+      "add_line1": "Holi chowk ",
+      "add_line2": "Gandhinagar,Rampuri",
+      "add_line3": "Muzaffarnagar",
+      "city": "MZN",
+      "state": "Uttar Pradesh",
+      "pincode": 251001
+    },
+    {
+      "role": "Mobile",
+      "fname": "Adil Faiz",
+      "mobile": 9990989396,
+      "email": "palravan121$$##@gmail.com",
+      "notify": 0,
+      "add_line1": "Ghanta ghar A-B block",
+      "add_line2": "Chowdhary charan singh University Meerut",
+      "add_line3": "Meerut",
+      "city": "Meerut",
+      "state": "Uttar Pradesh",
+      "pincode": 250002
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "rows": [
+    {
+      "state": "Maharashtra",
+      "pincode": "400012,\r\n411025,\r\n413104,\r\n421603,\r\n431512,\r\n445323"
+    },
+    {
+      "state": "Delhi",
+      "pincode": "110009,\r\n110022,\r\n110007,\r\n110039,\r\n110089,\r\n\t110095"
+    },
+    {
+      "state": "Karnataka",
+      "pincode": "\r\n560014,\r\n560069,\r\n562160,\r\n560101,\r\n570017,\r\n583280"
+    },
+    {
+      "state": "West Bengal",
+      "pincode": "700002,\r\n700069,\r\n711227,\r\n721646,\r\n732123,\r\n742184"
+    }
+  ]
+}

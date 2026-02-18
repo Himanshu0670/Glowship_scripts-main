@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "firstName": "kishor",
+      "lastName": "sharma",
+      "username": "ks",
+      "password": "pwd1234565"
+    },
+    {
+      "firstName": "john",
+      "lastName": "doe",
+      "username": "jh",
+      "password": "pwd1234566"
+    },
+    {
+      "firstName": "jack",
+      "lastName": "rey",
+      "username": "jr",
+      "password": "pwd1234566"
+    },
+    {
+      "firstName": "john",
+      "lastName": "wesley",
+      "username": "JW",
+      "password": "pwd1234565"
+    },
+    {
+      "firstName": "Koala",
+      "lastName": "Kang",
+      "username": "KK",
+      "password": "pwd1234566"
+    }
+  ]
+}

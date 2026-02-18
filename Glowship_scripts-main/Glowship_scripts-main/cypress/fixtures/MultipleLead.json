@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "salu": "Mr.",
+      "c_type": "Developer",
+      "fname": "Rishabh Pant",
+      "email": "officialrishabh@gmail.com",
+      "mobile": "898687678,\r\n7872626755\r\n   ",
+      "add_line1": "A-100, Swami Dayanand Marg, Jagatpuri",
+      "add_line2": " Krishna Nagar, Delhi",
+      "city": "Delhi",
+      "state": "Delhi",
+      "pincode": "251002,\r\n110012",
+      "assign": "rakesh"
+    },
+    {
+      "salu": "Ms.",
+      "c_type": "Apartment Complex",
+      "fname": "Raman",
+      "email": "aman@70gmail.com",
+      "mobile": "787878786,\r\n7878787862",
+      "add_line1": "Ghanta ghar A-B block",
+      "add_line2": "Chowdhary charan singh University Meerut",
+      "city": "Meerut",
+      "state": "Uttar Pradesh",
+      "pincode": "560012,\r\n250002",
+      "assign": "Aman"
+    },
+    {
+      "salu": "Prof.",
+      "c_type": "SME",
+      "fname": "Avni",
+      "email": "avni89@hotmail.in",
+      "mobile": "1221122,\r\n1221122231",
+      "add_line1": "Kalkaji Mandir",
+      "add_line2": "Near, DAV inter College, Aarya Samaajh Road",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "110012,\r\n560037",
+      "assign": "Raman"
+    },
+    {
+      "salu": "Dr.",
+      "c_type": "Industrial-Other",
+      "fname": "Deepak",
+      "email": "deepeekrabdisamoddhkdhd19@gmail.com",
+      "mobile": "897455.0,\r\n8974552211",
+      "add_line1": "Kalkaji Mandir",
+      "add_line2": "Geeta Colony",
+      "city": "Delhi",
+      "state": "Delhi",
+      "pincode": "40001,\r\n110010",
+      "assign": "sdsad"
+    },
+    {
+      "salu": "Mrs.",
+      "c_type": "Commercial",
+      "fname": "This user has fifty characters as full name random",
+      "email": "rama@yahoo.co.in",
+      "mobile": "898890-,\r\n8988901111",
+      "add_line1": "Kalkaji Mandir",
+      "add_line2": "B-21, New Vihar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "744301,\r\n400011",
+      "assign": "Hitman"
+    },
+    {
+      "salu": "Prof.",
+      "c_type": "Govt",
+      "fname": "ABC",
+      "email": "admintest@glowsun.iio",
+      "mobile": "565111dd,\r\n8251111111",
+      "add_line1": "A-B/100,Carnicobar",
+      "add_line2": "Geet Colony,Andhra Pradesh",
+      "city": "Srikakulam",
+      "state": "Andhra Pradesh",
+      "pincode": "251001,\r\n532001",
+      "assign": "Ram"
+    },
+    {
+      "salu": "Dr.",
+      "c_type": "SNA/ Discom",
+      "fname": "Adil Faiz",
+      "email": "palravan121$$##@gmail.in",
+      "mobile": "233#$#@!1@,\r\n7675400000",
+      "add_line1": " Room No. 47, 9th floor, Haryana Civil Secretariat",
+      "add_line2": "Sector-1, Chandigarh",
+      "city": "Chandigarh",
+      "state": "Chandigarh",
+      "pincode": "67562,\r\n160001",
+      "assign": "Ravi"
+    }
+  ]
+}
